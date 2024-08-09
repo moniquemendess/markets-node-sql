@@ -21,3 +21,6 @@ app.use("/api/markets", MarketsRoutes);
 
 const FactoriesRoutes = require("../src/api/routes/Factories.routes");
 app.use("/api/factories", FactoriesRoutes);
+
+const StockRoutes = require("../src/api/routes/Stock.routes");
+app.use("/api/stock", StockRoutes);
