@@ -1,4 +1,4 @@
-const getAllMarketsService = require("../../services/Markets/getAllMarkets.service");
+const getAllMarketsService = require("../../services/Markets/Markets.service");
 
 const getAllMarkets = async (req, res) => {
   try {
