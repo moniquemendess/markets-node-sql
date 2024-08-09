@@ -1,4 +1,4 @@
-const getAllFactoriesService = require("../../services/Factories/getAllFactories.service");
+const getAllFactoriesService = require("../../services/Factories/Factories.service");
 
 const getAllFactories = async (req, res) => {
   try {
