@@ -1,8 +1,15 @@
 const pool = require("../../../db/connection");
+const Factory = require("../../models/Factories.model");
 
-const getAllFactories = async () => {
+// Criar las fabricas
+const createFactory = async (factoryData) => {
+  return await Factory.create(factoryData);
+};
+
+// mostrar todas la fabricas
+const getAllFactoriesService = async () => {
   const [rows] = await pool.execute("SELECT * FROM Factories");
   return rows;
 };
 
-module.exports = getAllFactories;
+module.exports = { createFactory, getAllFactoriesService };
