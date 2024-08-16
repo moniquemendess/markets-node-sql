@@ -1,10 +1,12 @@
 const ProductsRoutes = require("express").Router();
-const getAllProducts = require("../controllers/Products/products.controllers");
-const addProduct = require("../controllers/Products/products.controllers");
+const {
+  getAllProducts,
+  addProduct,
+} = require("../controllers/Products/Products.controllers");
 
 //Rutas
 
 ProductsRoutes.get("/getAllProducts", getAllProducts);
-ProductsRoutes.get("/addProducts", addProduct);
+ProductsRoutes.post("/addProducts", addProduct);
 
 module.exports = ProductsRoutes;
